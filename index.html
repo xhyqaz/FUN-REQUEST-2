@@ -1,5 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head></head>
-  <body></body>
+  <head>
+    <title>fun request 2!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="nav-bar">
+      <ul id="nav-bar-list">
+        <li>About</li>
+        <li>Uses</li>
+        <li>Creations</li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>The Superior Color,<br />#E6E6FF</h1>
+      <h2>A shade that tickles your eyes<br /><i>Don't see it?</i></h2>
+
+      <div class="container-flex">
+        <div id="popup-open">
+          <button id="popup-open-button"><b>Look closer.</b></button>
+        </div>
+      </div>
+
+      <dialog id="popup">
+        <form method="dialog">
+          <div id="popup-close"></div>
+          <button id="popup-close-button"><b>Close</b></button>
+          <p id="popup-paragraph">
+            Even though the color isn't very visible, it still leaves an
+            impression. Lavender is subtle, but, even so, is able to calm one's
+            eyes. White is blinding, but with a little purple tint? The eyelids
+            relax and, hopefully, the mind does too.
+          </p>
+        </form>
+      </dialog>
+    </main>
+
+    <script>
+      const closeButton = document.getElementById("popup-close");
+      const openButton = document.getElementById("popup-open");
+      const dialog = document.getElementById("popup");
+
+      openButton.addEventListener("click", () => {
+        popup.showModal();
+      });
+
+      closeButton.addEventListener("click", () => {
+        popup.close();
+      });
+    </script>
+  </body>
 </html>

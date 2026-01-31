@@ -1,1 +1,144 @@
+@font-face {
+  font-family: "Racing Sans One";
+  src: url("fonts/RacingSansOne-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "Manrope";
+  src: url("fonts/static/Manrope-Regular.ttf") format("truetype");
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #e6e6ff;
+  height: 75vh;
+}
+
+main {
+  padding-top: 7.75rem;
+}
+
+#nav-bar {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 32px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  justify-content: space-around;
+}
+
+#nav-bar-list {
+  list-style-type: none;
+  padding: 8px;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+
+  font-size: 1rem;
+  font-family: "Manrope";
+
+  transition: ease-in 200ms;
+}
+
+h1 {
+  font-family: "Racing Sans One";
+  font-size: 4rem;
+  text-align: center;
+
+  user-select: none;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-family: "Manrope";
+  font-size: 1rem;
+  text-align: center;
+  padding: 0;
+
+  user-select: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+#popup-open-button {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 32px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  font-family: "Manrope";
+  font-size: 1.5rem;
+
+  transition: ease-in 200ms;
+
+  padding: 1rem 2rem;
+}
+
+#popup-close-button {
+  background-color: transparent;
+  border: none;
+
+  font-family: "Manrope";
+  font-size: 1rem;
+
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem 1rem;
+  transition: ease-in 200ms;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+
+  margin: 0;
+}
+
+#popup-open:hover #popup-open-button {
+  cursor: pointer;
+  box-shadow: 0 4px 75px rgba(0, 0, 0, 0.15);
+}
+
+#popup-close:hover #popup-closed-button {
+  cursor: pointer;
+  box-shadow: 0 4px 75px rgba(0, 0, 0, 0.15);
+}
+
+#nav-bar:hover #nav-bar-list {
+  cursor: pointer;
+  box-shadow: 0 4px 75px rgba(0, 0, 0, 0.15);
+}
+
+#popup-paragraph {
+  font-family: "Manrope";
+  padding: 1rem;
+}
+
+#popup {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 32px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  width: 50vw;
+}
